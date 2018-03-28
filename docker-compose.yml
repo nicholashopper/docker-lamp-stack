@@ -1,0 +1,9 @@
+version: '2'
+services:
+ nginx:
+  build:
+   context: .
+  environment:
+      - VIRTUAL_HOST=${domain}
+  ports:
+    - "80:80"
